@@ -12,7 +12,8 @@
       "Bash(curl -s http://localhost:80/pages/23_Thank_You/index.html)",
       "Bash(curl -s http://localhost:80/pages/12_Cyber_Range/index.html)",
       "Bash(curl -s http://localhost:80/pages/13_AI_Evolution/index.html)",
-      "Bash(curl -s http://localhost:80/js/script.js)"
+      "Bash(curl -s http://localhost:80/js/script.js)",
+      "Bash(zip -r iCSI-TXCSLN-Presentation.zip index.html README.md css/ js/ pics/ pages/ --exclude \"*.DS_Store\")"
     ]
   }
 }
