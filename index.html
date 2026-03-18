@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCSI — TXCSLN Presentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Outfit:wght@700&family=Space+Grotesk:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-slide="1" data-depth="0">
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <button class="nav-arrow nav-left" id="prevSlide" aria-label="Previous Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <button class="nav-arrow nav-right" id="nextSlide" aria-label="Next Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+
+    <main class="slide-content">
+        <div class="content-wrapper">
+            <img src="pics/PXL_Classroom.jpg" alt="iCSI Classroom" class="intro-image">
+
+            <h1 class="main-title">
+                <span class="gradient-text">iCSI</span><br>
+                The Institute of CyberSecurity and Innovation<br>
+                <span style="font-size:2rem; opacity:0.85;">San Antonio, Texas &mdash; NorthEast ISD</span>
+            </h1>
+
+            <a href="https://present.cyberlessons101.com" target="_blank" class="download-link">
+                Click Here to Open This Presentation
+            </a>
+
+            <a href="#" class="download-link">[ Download Presentation (coming soon) ]</a>
+
+            <a href="https://github.com/androidteacher/TXCSLN-Presentation-iCSI-March-25"
+               target="_blank" class="download-link" style="color: #a07aff;">
+                GitHub: androidteacher/TXCSLN-Presentation-iCSI-March-25
+            </a>
+
+            <div class="accent-line"></div>
+        </div>
+    </main>
+
+    <footer class="slide-footer">
+        <div class="organization-info">
+            <img src="pics/logo.png" alt="iCSI Logo" class="footer-logo">
+            <p><i>The Institute of CyberSecurity and Innovation. (NorthEast ISD. San Antonio, TX)</i></p>
+        </div>
+        <div class="pagination-container">
+            <ul class="pagination-list" id="jumpList"></ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

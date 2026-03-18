@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCSI — Portable Activities</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Outfit:wght@700&family=Space+Grotesk:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body data-slide="10" data-depth="1">
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <button class="nav-arrow nav-left" id="prevSlide" aria-label="Previous Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <button class="nav-arrow nav-right" id="nextSlide" aria-label="Next Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+
+    <main class="slide-content">
+        <div class="content-wrapper portable-wrapper">
+            <h2 class="portable-title gradient-text">Quick Example: iCSI Activities are Portable</h2>
+
+            <a href="https://cyberlessons101.com/challenges/flag-red22" target="_blank" class="portable-link">
+                Click Here to see the Activity on Cyberlessons101.com
+            </a>
+
+            <img src="../../pics/CyberLessons_Activity/activity1.png"
+                 alt="CyberLessons Activity Example"
+                 class="portable-img panorama-img">
+
+            <ul class="portable-bullets">
+                <li>
+                    Each challenge relates to real-world scenarios — students investigate
+                    <a href="https://arstechnica.com/information-technology/2022/08/okta-and-1password-targeted-by-lapsus-hackers-who-hit-uber-and-rockstar/" target="_blank" class="notion-link">breaches like 1Password/Okta</a>
+                    to build context and motivation.
+                </li>
+                <li>
+                    <code style="color:#00e6ff; background:rgba(0,0,0,0.3); padding:2px 8px; border-radius:4px;">docker run</code>
+                    command: Just type the docker run command — the container/VM spins up locally! <strong>Super easy.</strong>
+                </li>
+            </ul>
+
+            <img src="../../pics/docker/container-run.png"
+                 alt="docker run command output"
+                 class="portable-img panorama-img" style="max-width:700px;">
+
+            <p class="port-note">Access the activity on port 9033 once the container is running.</p>
+
+            <img src="../../pics/docker/container-2.png"
+                 alt="Container running in browser"
+                 class="portable-img panorama-img" style="max-width:700px;">
+
+            <div class="accent-line"></div>
+        </div>
+    </main>
+
+    <!-- Panorama Modal -->
+    <div class="pano-modal" role="dialog" aria-modal="true" aria-label="Image view">
+        <span class="pano-close" aria-label="Close">&times;</span>
+        <img src="" alt="Expanded view">
+    </div>
+
+    <footer class="slide-footer">
+        <div class="organization-info">
+            <img src="../../pics/logo.png" alt="iCSI Logo" class="footer-logo">
+            <p><i>The Institute of CyberSecurity and Innovation. (NorthEast ISD. San Antonio, TX)</i></p>
+        </div>
+        <div class="pagination-container">
+            <ul class="pagination-list" id="jumpList"></ul>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

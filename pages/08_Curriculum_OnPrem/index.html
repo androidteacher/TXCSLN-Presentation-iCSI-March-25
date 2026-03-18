@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCSI — Curriculum: On-Premise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Outfit:wght@700&family=Space+Grotesk:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body data-slide="8" data-depth="1">
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <button class="nav-arrow nav-left" id="prevSlide" aria-label="Previous Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <button class="nav-arrow nav-right" id="nextSlide" aria-label="Next Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+
+    <main class="slide-content">
+        <div class="content-wrapper" style="max-width:1150px;">
+            <h2 class="history-title gradient-text" style="margin-bottom:2rem;">Curriculum: On-Premise</h2>
+
+            <div class="spec-grid">
+                <div class="spec-box">
+                    <p class="spec-box-title">Hardware Specs</p>
+                    <ul class="spec-list">
+                        <li>32 GB RAM per student workstation + VMware</li>
+                        <li>vCenter server + 3 virtualization hosts (always on)</li>
+                        <li>1.5 TB RAM, 96 CPU cores, 30 TB disk</li>
+                        <li>Total investment: <strong>~$80k</strong></li>
+                        <li>Supports ~200–300 concurrent VMs</li>
+                    </ul>
+                </div>
+                <div class="spec-box">
+                    <p class="spec-box-title">What We Use It For</p>
+                    <ul class="spec-list">
+                        <li>Always-on ticketing system (We call students to fix things first and utilize a ticketing system for that.)</li>
+                        <li>On-premise Cyber Range (100+ exploit tutorials)</li>
+                        <li>Student SIEM access — EDR data exploration</li>
+                        <li>Student project VMs on demand</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accent-line"></div>
+        </div>
+    </main>
+
+    <footer class="slide-footer">
+        <div class="organization-info">
+            <img src="../../pics/logo.png" alt="iCSI Logo" class="footer-logo">
+            <p><i>The Institute of CyberSecurity and Innovation. (NorthEast ISD. San Antonio, TX)</i></p>
+        </div>
+        <div class="pagination-container">
+            <ul class="pagination-list" id="jumpList"></ul>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

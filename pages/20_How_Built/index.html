@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI at iCSI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Outfit:wght@700&family=Space+Grotesk:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body data-slide="21" data-depth="1">
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <button class="nav-arrow nav-left" id="prevSlide" aria-label="Previous Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <button class="nav-arrow nav-right" id="nextSlide" aria-label="Next Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+
+    <main class="slide-content">
+        <div class="content-wrapper agentic-wrapper">
+            <h2 class="agentic-title gradient-text">Agentic AI</h2>
+
+            <div class="fleet-statement">
+                <p>When an iCSI instructor sits down to write curriculum, we are never alone. We have a fleet of AI
+                    agents working for us.</p>
+            </div>
+
+            <div class="showcase-example glass-panel">
+                <h3 class="example-heading">Simple Example:</h3>
+
+                <p class="showcase-detail">This website/slideshow was completely <b>prompt engineered</b> by Mr. Beck.
+                </p>
+
+                <div class="no-code-box">
+                    <p>He never wrote a line of code or deployed a single application to support the running of this
+                        powerpoint-like website.</p>
+                </div>
+
+                <p class="showcase-method">He just 'asked' for it using precise language and monitored the AI output
+                    closely to produce what you see here.</p>
+            </div>
+
+            <div class="accent-line"></div>
+        </div>
+    </main>
+
+    <footer class="slide-footer">
+        <div class="organization-info">
+            <img src="../../pics/logo.png" alt="iCSI Logo" class="footer-logo">
+            <p><i>The Institute of CyberSecurity and Innovation. (NorthEast ISD. San Antonio, TX)</i></p>
+        </div>
+        <div class="pagination-container">
+            <ul class="pagination-list" id="jumpList"></ul>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

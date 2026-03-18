@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCSI — AI: How Are We Dealing With That?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Outfit:wght@700&family=Space+Grotesk:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body data-slide="14" data-depth="1">
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <button class="nav-arrow nav-left" id="prevSlide" aria-label="Previous Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <button class="nav-arrow nav-right" id="nextSlide" aria-label="Next Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+
+    <main class="slide-content">
+        <div class="content-wrapper timeline-wrapper">
+            <h2 class="timeline-title gradient-text">AI:<br>Brief History</h2>
+
+            <div class="era-card">
+                <span class="era-year">2017</span>
+                <div class="era-content">
+                    <p class="era-label">AI could <em>Perceive!</em></p>
+                    <p class="era-sub">Identify a horse in a photo. Pattern recognition at scale.</p>
+                </div>
+            </div>
+
+            <div class="era-card">
+                <span class="era-year">~2020</span>
+                <div class="era-content">
+                    <p class="era-label">AI could <em>Generate!</em></p>
+                    <p class="era-sub">Natural language prediction — write, summarize, translate.</p>
+                </div>
+            </div>
+
+            <div class="era-card">
+                <span class="era-year">2–3 Years Ago</span>
+                <div class="era-content">
+                    <p class="era-label">AI could <em>Reason!</em></p>
+                    <p class="era-sub">Deep thinking — self-questioning before answering. Chain-of-thought.</p>
+                </div>
+            </div>
+
+            <div class="era-card" style="border-color: rgba(0,230,255,0.4);">
+                <span class="era-year" style="color:#00e6ff;">Most Recently</span>
+                <div class="era-content">
+                    <p class="era-label" style="color:#00e6ff;">AI can now perform tasks for you <em>Agentically</em></p>
+                    <p class="era-sub">Build, deploy, and execute tasks on the user's behalf. Autonomous multi-step workflows.</p>
+                </div>
+            </div>
+
+            <p class="timeline-footer">
+                Instructors make extensive use of Agentic AI at iCSI at a cost of
+                <strong>$100–$200/month</strong> in 3rd-party API credits
+                (Google, Anthropic, KIMI AI)
+            </p>
+
+            <div class="accent-line"></div>
+        </div>
+    </main>
+
+    <footer class="slide-footer">
+        <div class="organization-info">
+            <img src="../../pics/logo.png" alt="iCSI Logo" class="footer-logo">
+            <p><i>The Institute of CyberSecurity and Innovation. (NorthEast ISD. San Antonio, TX)</i></p>
+        </div>
+        <div class="pagination-container">
+            <ul class="pagination-list" id="jumpList"></ul>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCSI — On-Premise Drawbacks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Outfit:wght@700&family=Space+Grotesk:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body data-slide="9" data-depth="1">
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <button class="nav-arrow nav-left" id="prevSlide" aria-label="Previous Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <button class="nav-arrow nav-right" id="nextSlide" aria-label="Next Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+
+    <main class="slide-content">
+        <div class="content-wrapper drawback-wrapper">
+            <h2 class="drawback-title gradient-text">On-Premise: The Drawbacks</h2>
+
+            <div class="problem-box">
+                <p class="problem-label">The Problem</p>
+                <p class="problem-text">"How can I access X at home?"</p>
+                <p class="problem-text" style="font-size:1.2rem; color:rgba(255,255,255,0.6); margin-top:0.5rem; font-style:italic;">Answer: You can't. (We don't want students logging in after hours.)</p>
+            </div>
+
+            <div class="solution-box">
+                <p class="solution-label">The Solution</p>
+                <p class="solution-text">
+                    Containerize everything and push to <strong>Docker Hub</strong> for free.
+                    Students can pull and run any activity on their own machine at home.
+                </p>
+                <p style="margin-top:1rem; font-family:var(--font-body); font-size:1.1rem; color:rgba(255,255,255,0.7);">
+                    Explore our activities at:
+                    <a href="https://cyberlessons101.com" target="_blank" class="solution-link">Click Here: cyberlessons101.com</a>
+                </p>
+            </div>
+
+            <div class="accent-line"></div>
+        </div>
+    </main>
+
+    <footer class="slide-footer">
+        <div class="organization-info">
+            <img src="../../pics/logo.png" alt="iCSI Logo" class="footer-logo">
+            <p><i>The Institute of CyberSecurity and Innovation. (NorthEast ISD. San Antonio, TX)</i></p>
+        </div>
+        <div class="pagination-container">
+            <ul class="pagination-list" id="jumpList"></ul>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

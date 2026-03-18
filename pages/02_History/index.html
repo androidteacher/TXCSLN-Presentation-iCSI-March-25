@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCSI — History</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Outfit:wght@700&family=Space+Grotesk:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body data-slide="2" data-depth="1">
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <button class="nav-arrow nav-left" id="prevSlide" aria-label="Previous Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <button class="nav-arrow nav-right" id="nextSlide" aria-label="Next Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+
+    <main class="slide-content">
+        <div class="content-wrapper history-wrapper">
+            <h2 class="history-title gradient-text">iCSI History</h2>
+            <p class="history-intro">Cybersecurity classes were called "IT" back then!</p>
+
+            <ul class="history-list">
+                <li>
+                    <strong>2013 — Roosevelt High School</strong>
+                    <ul class="sub-list">
+                        <li>Mr. Beck takes 6 students + himself to sit for <strong>Network+</strong>.</li>
+                        <li>Everyone passed.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p class="history-section-title">Last Year at iCSI</p>
+            <ul class="history-list">
+                <li>
+                    ~60 students passed <strong>Security+</strong>
+                    <span class="topic-highlight">(99% of test takers)</span>
+                </li>
+                <li>
+                    ~40 students passed <strong>Network+</strong>
+                    <span class="topic-highlight">(70% of test takers)</span>
+                </li>
+                <li>
+                    ~90 students passed <strong>Tech+</strong>
+                    <span class="topic-highlight">(60% of test takers)</span>
+                </li>
+                <li>
+                    Seniors:
+                    <ul class="sub-list">
+                        <li>CySA+</li>
+                        <li>PenTest+</li>
+                        <li>AWS Certifications</li>
+                        <li>OSCP</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="accent-line"></div>
+        </div>
+    </main>
+
+    <footer class="slide-footer">
+        <div class="organization-info">
+            <img src="../../pics/logo.png" alt="iCSI Logo" class="footer-logo">
+            <p><i>The Institute of CyberSecurity and Innovation. (NorthEast ISD. San Antonio, TX)</i></p>
+        </div>
+        <div class="pagination-container">
+            <ul class="pagination-list" id="jumpList"></ul>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

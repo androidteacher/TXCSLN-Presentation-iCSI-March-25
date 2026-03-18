@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker exec:*)",
+      "Bash(docker cp:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:9000/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:9000/pages/02_History/index.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:9000/pages/23_Thank_You/index.html)",
+      "Bash(docker compose:*)",
+      "Bash(curl -s http://localhost:80)",
+      "Bash(curl -s http://localhost:80/pages/12_Why_Notion/index.html)",
+      "Bash(curl -s http://localhost:80/pages/23_Thank_You/index.html)",
+      "Bash(curl -s http://localhost:80/pages/12_Cyber_Range/index.html)",
+      "Bash(curl -s http://localhost:80/pages/13_AI_Evolution/index.html)",
+      "Bash(curl -s http://localhost:80/js/script.js)"
+    ]
+  }
+}

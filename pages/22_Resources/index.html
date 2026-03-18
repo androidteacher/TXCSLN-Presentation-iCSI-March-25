@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCSI — Resources</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Outfit:wght@700&family=Space+Grotesk:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body data-slide="23" data-depth="1">
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <button class="nav-arrow nav-left" id="prevSlide" aria-label="Previous Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <button class="nav-arrow nav-right" id="nextSlide" aria-label="Next Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+
+    <main class="slide-content">
+        <div class="content-wrapper" style="max-width:900px;">
+            <h2 class="history-title gradient-text" style="margin-bottom:2.5rem;">Resources</h2>
+
+            <ul class="resource-list">
+                <li class="resource-item">
+                    <p class="resource-label">GitHub — This Presentation</p>
+                    <a href="https://github.com/androidteacher/TXCSLN-Presentation-iCSI-March-25"
+                       target="_blank" class="resource-link">
+                        github.com/androidteacher/TXCSLN-Presentation-iCSI-March-25
+                    </a>
+                </li>
+                <li class="resource-item">
+                    <p class="resource-label">Notion — Teaching Tokens</p>
+                    <a href="https://humble-raptor-f30.notion.site/Teaching-Tokens-Implementing-Private-Lightweight-AI-in-the-Classroom-MiniJarvis-3174c8e523768022b7daf704a7d2f9d1?source=copy_link" target="_blank" class="resource-link">
+                        Teaching Tokens: Implementing Private, Lightweight AI in the Classroom
+                    </a>
+                </li>
+                <li class="resource-item">
+                    <p class="resource-label">Notion — Inside OpenClaw</p>
+                    <a href="https://www.notion.so/Inside-OpenClaw-Deploying-Sniffing-and-Hijacking-the-Agent-3224c8e523768080bcdbe0661a560c40?source=copy_link" target="_blank" class="resource-link">
+                        Inside OpenClaw: Deploying, Sniffing and Hijacking the Agent
+                    </a>
+                    <p class="resource-sub">~This does require the student spend $5 (It's not great for general rollout, but individual seniors with personal credit cards and instructors should get a lot out of this series.)</p>
+                </li>
+            </ul>
+
+            <div class="accent-line"></div>
+        </div>
+    </main>
+
+    <footer class="slide-footer">
+        <div class="organization-info">
+            <img src="../../pics/logo.png" alt="iCSI Logo" class="footer-logo">
+            <p><i>The Institute of CyberSecurity and Innovation. (NorthEast ISD. San Antonio, TX)</i></p>
+        </div>
+        <div class="pagination-container">
+            <ul class="pagination-list" id="jumpList"></ul>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCSI — Cyber Range</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Outfit:wght@700&family=Space+Grotesk:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body data-slide="13" data-depth="1">
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <button class="nav-arrow nav-left" id="prevSlide" aria-label="Previous Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <button class="nav-arrow nav-right" id="nextSlide" aria-label="Next Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+
+    <main class="slide-content">
+        <div class="content-wrapper range-wrapper">
+            <h2 class="range-title gradient-text">iCSI Cyber Range</h2>
+
+            <img src="../../pics/scoreboard/range_scoreboard.png"
+                 alt="Cyber Range Scoreboard"
+                 class="range-img">
+
+            <ul class="range-bullets">
+                <li><strong>Gamification</strong> drives student engagement — leaderboard visible to the entire class.</li>
+                <li><strong>First Blood bonuses</strong> reward students who solve challenges first, creating genuine investment in the competition.</li>
+                <li>Students track their rank across the semester; performance exports directly to the gradebook.</li>
+                <li>Auto-graded on flag submission — no manual grading needed.</li>
+            </ul>
+
+            <img src="../../pics/scoreboard/host1.png"
+                 alt="Anyone can host — docker run"
+                 class="range-img panorama-img" style="max-width:600px;">
+
+            <p class="port-note" style="font-family:var(--font-body); font-size:1rem; color:rgba(255,255,255,0.65); text-align:center; margin-top:0.5rem;">
+                Anyone can host their own range — just type the <code style="color:#00e6ff; background:rgba(0,0,0,0.3); padding:2px 8px; border-radius:4px;">docker run</code> command
+            </p>
+
+            <div class="accent-line"></div>
+        </div>
+    </main>
+
+    <!-- Panorama Modal -->
+    <div class="pano-modal" role="dialog" aria-modal="true" aria-label="Image view">
+        <span class="pano-close" aria-label="Close">&times;</span>
+        <img src="" alt="Expanded view">
+    </div>
+
+    <footer class="slide-footer">
+        <div class="organization-info">
+            <img src="../../pics/logo.png" alt="iCSI Logo" class="footer-logo">
+            <p><i>The Institute of CyberSecurity and Innovation. (NorthEast ISD. San Antonio, TX)</i></p>
+        </div>
+        <div class="pagination-container">
+            <ul class="pagination-list" id="jumpList"></ul>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCSI — Why Notion?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Outfit:wght@700&family=Space+Grotesk:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body data-slide="12" data-depth="1">
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <button class="nav-arrow nav-left" id="prevSlide" aria-label="Previous Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <button class="nav-arrow nav-right" id="nextSlide" aria-label="Next Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+
+    <main class="slide-content">
+        <div class="content-wrapper why-notion-wrapper">
+
+            <div class="notion-icon-wrap">
+                <svg class="notion-icon-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="120" height="120" rx="18" fill="#1a1a1a" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+                    <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
+                          font-family="Georgia, serif" font-size="72" font-weight="bold" fill="white">N</text>
+                </svg>
+            </div>
+
+            <h2 class="why-notion-title gradient-text">Why Notion?</h2>
+
+            <div class="notion-cards">
+                <div class="notion-card">
+                    <p class="notion-card-text">Full Markdown support — structured, readable content</p>
+                </div>
+                <div class="notion-card">
+                    <p class="notion-card-text">Screenshots double-click to zoom in-browser</p>
+                </div>
+                <div class="notion-card">
+                    <p class="notion-card-text">Flexible layout, completely free</p>
+                </div>
+                <div class="notion-card">
+                    <p class="notion-card-text">Beats Google Drive for this use case</p>
+                </div>
+            </div>
+
+            <div class="accent-line"></div>
+        </div>
+    </main>
+
+    <footer class="slide-footer">
+        <div class="organization-info">
+            <img src="../../pics/logo.png" alt="iCSI Logo" class="footer-logo">
+            <p><i>The Institute of CyberSecurity and Innovation. (NorthEast ISD. San Antonio, TX)</i></p>
+        </div>
+        <div class="pagination-container">
+            <ul class="pagination-list" id="jumpList"></ul>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCSI — Facility Photos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Outfit:wght@700&family=Space+Grotesk:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body data-slide="4" data-depth="1">
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <button class="nav-arrow nav-left" id="prevSlide" aria-label="Previous Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <button class="nav-arrow nav-right" id="nextSlide" aria-label="Next Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+
+    <main class="slide-content">
+        <div class="content-wrapper" style="max-width:1200px;">
+            <h2 class="history-title gradient-text" style="margin-bottom:1.5rem;">The Facility</h2>
+
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="../../pics/icsi_Pictures/SOC1.PANO.jpg"
+                         alt="iCSI Security Operations Center Classroom"
+                         class="panorama-img">
+                    <p class="photo-caption">iCSI Security Operations Center Classroom <span style="color:rgba(255,255,255,0.4); font-size:0.75rem;">(click to expand)</span></p>
+                </div>
+                <div class="photo-card">
+                    <img src="../../pics/icsi_Pictures/outside_PANO.jpg"
+                         alt="iCSI Front Entrance"
+                         class="panorama-img">
+                    <p class="photo-caption">iCSI Front Entrance (Former Community Walmart) <span style="color:rgba(255,255,255,0.4); font-size:0.75rem;">(click to expand)</span></p>
+                </div>
+                <div class="photo-card">
+                    <img src="../../pics/icsi_Pictures/plaque.jpg"
+                         alt="iCSI Plaque">
+                    <p class="photo-caption">iCSI Dedication Plaque</p>
+                </div>
+                <div class="photo-card">
+                    <img src="../../pics/icsi_Pictures/pearson_PANO.jpg"
+                         alt="PearsonVue Testing Lab"
+                         class="panorama-img">
+                    <p class="photo-caption">Students take their certification tests on site in our PearsonVue Lab <span style="color:rgba(255,255,255,0.4); font-size:0.75rem;">(click to expand)</span></p>
+                </div>
+                <div class="photo-card">
+                    <img src="../../pics/icsi_Pictures/netlab_PANO.jpg"
+                         alt="iCSI Networking Lab"
+                         class="panorama-img">
+                    <p class="photo-caption">iCSI Networking Lab (We support Net+ curriculum with CCNA/Cisco hands-on activities) <span style="color:rgba(255,255,255,0.4); font-size:0.75rem;">(click to expand)</span></p>
+                </div>
+                <div class="photo-card">
+                    <img src="../../pics/icsi_Pictures/undeveloped_PANO.jpg"
+                         alt="30,000 sq/ft undeveloped area"
+                         class="panorama-img">
+                    <p class="photo-caption">30,000 sq/ft undeveloped area. (7.5 million bond approved for a multi-purpose stadium.) <span style="color:rgba(255,255,255,0.4); font-size:0.75rem;">(click to expand)</span></p>
+                </div>
+            </div>
+
+            <div class="accent-line"></div>
+        </div>
+    </main>
+
+    <!-- Panorama Modal -->
+    <div class="pano-modal" role="dialog" aria-modal="true" aria-label="Panorama view">
+        <span class="pano-close" aria-label="Close">&times;</span>
+        <img src="" alt="Panorama">
+    </div>
+
+    <footer class="slide-footer">
+        <div class="organization-info">
+            <img src="../../pics/logo.png" alt="iCSI Logo" class="footer-logo">
+            <p><i>The Institute of CyberSecurity and Innovation. (NorthEast ISD. San Antonio, TX)</i></p>
+        </div>
+        <div class="pagination-container">
+            <ul class="pagination-list" id="jumpList"></ul>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>
